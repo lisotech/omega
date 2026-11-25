@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Omega Classic Collections Limited | Computers, Clothing, Shoes & Software</title>
+  <link rel="icon" type="image/png" href="lo.png" />
+  <link rel="apple-touch-icon" href="lo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -80,17 +82,15 @@
       color: var(--primary);
     }
 
-    .brand-icon {
-      width: 44px;
-      height: 44px;
-      background: linear-gradient(135deg, var(--accent), var(--primary));
-      color: #fff;
+    .brand-logo {
+      width: 46px;
+      height: 46px;
       border-radius: 10px;
-      display: grid;
-      place-items: center;
-      font-weight: 800;
-      font-size: 1.25rem;
-      letter-spacing: -0.5px;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 3px;
+      flex-shrink: 0;
     }
 
     .brand-text h1 {
@@ -814,7 +814,7 @@
   <!-- Header -->
   <header>
     <a href="#" class="brand">
-      <div class="brand-icon">OC</div>
+      <img src="lo.png" alt="Omega Classic Collections Limited Logo" class="brand-logo" />
       <div class="brand-text">
         <h1>Omega Classic Collections Ltd</h1>
         <p>Your Trusted Partner in Computer Solutions</p>
